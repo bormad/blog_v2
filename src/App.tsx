@@ -13,7 +13,7 @@ export default function App() {
         </Routes>
       </Suspense>
 
-      <Link to={"/"}>MainPage</Link>
+      <Link to={"/"}>MainPagee</Link>
       <Link to={"/about"}>AboutPage</Link>
     </div>
   );
