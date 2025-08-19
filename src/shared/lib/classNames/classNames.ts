@@ -7,7 +7,7 @@ export function classNames(
 ): string {
   return [
     cls,
-    ...additional,
+    ...additional.filter(Boolean),
     Object.entries(mods)
       .filter(([_, bool]) => Boolean(bool)) // eslint-disable-line @typescript-eslint/no-unused-vars
       .map(([className]) => className),
