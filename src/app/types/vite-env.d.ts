@@ -1,5 +1,6 @@
 /// <reference types="vite-plugin-svgr/client" />
 /// <reference types="vite/client" />
+
 declare module "*.module.scss";
 declare module "*.svg" {
   const content: React.FC<React.SVGProps<SVGElement>>;
