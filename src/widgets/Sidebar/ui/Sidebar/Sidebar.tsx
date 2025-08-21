@@ -15,8 +15,6 @@ export const Sidebar = (props: SidebarProps) => {
     setCollapsed((prev) => !prev);
   };
 
-  console.log(styles);
-
   return (
     <div
       className={classNames(styles.sidebar, { [styles.collapsed]: collapsed }, [
