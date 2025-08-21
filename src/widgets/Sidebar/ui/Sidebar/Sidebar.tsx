@@ -17,11 +17,14 @@ export const Sidebar = (props: SidebarProps) => {
 
   return (
     <div
+      data-testid="sidebar"
       className={classNames(styles.sidebar, { [styles.collapsed]: collapsed }, [
         className!,
       ])}
     >
-      <button onClick={onToggle}>toggle</button>
+      <button data-testid="sidebar-toggle" onClick={onToggle}>
+        toggle
+      </button>
       <ThemeSwitcher className={styles.themeSwitcher} />
     </div>
   );
