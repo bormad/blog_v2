@@ -5,6 +5,7 @@ import styles from "./Button.module.scss";
 // eslint-disable-next-line react-refresh/only-export-components
 export enum ThemeButton {
   CLEAR = "clear",
+  OUTLINE = "outline",
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
