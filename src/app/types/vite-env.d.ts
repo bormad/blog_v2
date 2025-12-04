@@ -2,7 +2,9 @@
 /// <reference types="vite/client" />
 
 declare module "*.module.scss";
+
 declare module "*.svg" {
-  const content: React.FC<React.SVGProps<SVGElement>>;
+  import React from "react";
+  const content: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   export default content;
 }
